@@ -1,4 +1,4 @@
-var GameBoard = require("./component/GameBoard");
+import GameBoard from './component/GameBoard';
 
 var gameBoard;
 
@@ -6,6 +6,4 @@ window.onload = function() {
     gameBoard = new GameBoard();
 }
 
-module.exports = {
-    GameBoard:gameBoard
-}
+module.exports = gameBoard;
